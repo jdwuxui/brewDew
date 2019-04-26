@@ -1,0 +1,15 @@
+body {
+    background-image: url("../images/beers-and-friends-overlay.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+}
+
+h1 {
+    font-family: 'Patua One', cursive;
+    margin-top: 3rem;
+}
+
+footer {
+    position: sticky;
+}
