@@ -1,47 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
   <!-- Custom CSS -->
   <link rel="stylesheet" href="./assets/css/style.css">
-
   <!-- Firebase link -->
   <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
-
-  <script src="https://code.jquery.com/jquery-3.4.0.js" integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="
-    crossorigin="anonymous"></script>
-
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
-
-  <title>MeetUp Meteorologist app</title>
-
+  <title>The MARVELous App</title>
 </head>
-
 <body>
   <div class="container">
     <div class="row justify-content-center">
-      <h1 id="demo">Welcome to MeetUp Meteorologist</h1>
+      <h1 id="demo">Welcome to the MARVELous App</h1>
     </div>
     <div class="row justify-content-center">
-      <h4 id="tagline">Find meetups on days with good weather</h4>
+      <h4 id="tagline">Search The Marvelverse</h4>
     </div>
     <br>
     <div class="row justify-content-center">
-      <button class="btn btn-primary" id="submit">FIND A MEETUP</button>
+      <button class="btn btn-primary" id="submit">Character search </button>
     </div>
     <br>
-    <div id="weather-div"></div>
-    <div id="events-div"></div>
+    <div id="giphy-div"></div>
+    <br>
+    <div id="character-div"></div>
   </div>
-
+  <div class="fullscreen-bg">
+    <video loop muted autoplay poster="assets/MarvelIntro.mp4" class="fullscreen-bg__video">
+        <source src="./assets/images/MarvelIntro.mp4" type="video/mp4">
+    </video>
+</div>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
@@ -51,7 +45,6 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
-  <script rel="logic" src="./assets/javascript/brewdew.js"></script>
+  <script rel="javascript" src="./assets/javascript/brewdew.js"></script>
 </body>
-
 </html>
