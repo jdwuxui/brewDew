@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -14,35 +15,77 @@
   <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
   <title>The MARVELous App</title>
 </head>
+
 <body>
   <div class="container">
     <div class="row justify-content-center">
       <h1 id="demo">Welcome to the MARVELous App</h1>
     </div>
     <div class="row justify-content-center">
-      <h4 id="tagline">Search The Marvelverse</h4>
+      <h4 id="tagline">Start a gif fight between two MARVEL characters</h4>
     </div>
     <br>
     <div class="row justify-content-center">
-        <form class="form-inline">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-primary my-2 my-sm-0" type="submit">Character search</button>
-          </form>
+      <form class="form-inline">
+        <button id="start-fight" type="submit">START A FIGHT</button>
+      </form>
     </div>
     <br>
     <div id="giphy-div"></div>
     <br>
     <div id="character-div"></div>
-  </div>
+
+      <!-- CARD LAYOUT - FPO -->
+    <div class="card-deck" id="character-cards">
+        <div class="card">
+          <h5 class="card-header text-center">
+            HULK
+          </h5>
+          <img class="card-img-top" src="https://media.giphy.com/media/aS8ypUweGOXMA/giphy.gif" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Power Points:</li>
+            <li class="list-group-item">Dapibus ac facilisis in</li>
+          </ul>
+          <div class="card-body">
+            <a href="#" class="card-link">Call to Action</a>
+          </div>
+        </div>
+
+        <div class="card">
+            <h5 class="card-header text-center">
+              SPIDERMAN
+            </h5>
+            <img class="card-img-top" src="https://media.giphy.com/media/26uT2NI7kej7p9fLW/giphy.gif" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Power Points:</li>
+              <li class="list-group-item">Dapibus ac facilisis in</li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link">Call to Action</a>
+            </div>
+          </div>
+
+      </div>
+
+  </div><!-- Container Close -->
+
+  <!-- Video BG -->
   <div class="fullscreen-bg">
-    <video loop muted autoplay poster="assets/MarvelIntro.mp4" class="fullscreen-bg__video">
-        <source src="./assets/images/MarvelIntro.mp4" type="video/mp4">
+    <video muted autoplay poster="assets/MarvelIntro.mp4" class="fullscreen-bg__video">
+      <source src="./assets/images/MarvelIntro.mp4" type="video/mp4">
     </video>
-</div>
-<script
-  src="https://code.jquery.com/jquery-3.4.0.js"
-  integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="
-  crossorigin="anonymous"></script>
+  </div>
+  
+  <script src="https://code.jquery.com/jquery-3.4.0.js" integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="
+    crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
     crossorigin="anonymous"></script>
@@ -51,4 +94,5 @@
     crossorigin="anonymous"></script>
   <script rel="javascript" src="./assets/javascript/brewdew.js"></script>
 </body>
+
 </html>
